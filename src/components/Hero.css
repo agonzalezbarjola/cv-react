@@ -1,0 +1,56 @@
+.hero {
+  display:grid;
+  place-items:center
+  }
+  .card {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(240, 248, 255, 0.241);
+    
+  }
+  img {
+    width: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    object-fit:cover;
+  
+    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    
+    transform-origin:center;
+    transform:perspective(800px) rotateY(25deg);
+    transition:0.5s;
+    
+  }
+
+  .container {
+    max-width:600px;
+    max-height:350px;
+    
+    
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    
+  }
+  .container:hover img {
+    opacity:0.3;
+  }
+  .container img:hover {
+    transform:perspective(800px)       rotateY(0deg);
+    opacity:1;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 2px 2px rgba(240, 248, 255, 0.241);
+  }
+  a {
+    color: #414144;
+    text-decoration: none;
+    font-weight: bold;
+  }
